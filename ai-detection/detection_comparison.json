@@ -1,0 +1,34 @@
+{
+  "test_scenario": "SSH brute force + portskanning + fil\u00e4ndring",
+  "tests": [
+    {
+      "attack": "SSH brute force (10 f\u00f6rs\u00f6k)",
+      "rule_based_detection_sec": null,
+      "ai_detection_sec": null,
+      "rule_based_detected": null,
+      "ai_detected": null
+    },
+    {
+      "attack": "Portskanning (top 1000)",
+      "rule_based_detection_sec": null,
+      "ai_detection_sec": null,
+      "rule_based_detected": null,
+      "ai_detected": null
+    },
+    {
+      "attack": "Kritisk fil\u00e4ndring",
+      "rule_based_detection_sec": null,
+      "ai_detection_sec": null,
+      "rule_based_detected": null,
+      "ai_detected": null
+    },
+    {
+      "attack": "L\u00e5ngsam brute force (1 f\u00f6rs\u00f6k/min)",
+      "rule_based_detection_sec": null,
+      "ai_detection_sec": null,
+      "rule_based_detected": null,
+      "ai_detected": null
+    }
+  ],
+  "measurement_date": "2026-04-23T14:28:01.009993"
+}

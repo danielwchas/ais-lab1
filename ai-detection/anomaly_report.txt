@@ -1,0 +1,29 @@
+============================================================
+  ANOMALIDETEKTERINGSRAPPORT
+============================================================
+
+Analyserad period: 2026-04-26 02:25:00+00:00 — 2026-04-26 14:15:00+00:00
+Antal tidsperioder analyserade: 143
+
+--- Isolation Forest ---
+Anomalier detekterade: 13
+
+--- Statistisk baslinje (z-score) ---
+Anomalier detekterade: 5
+
+--- Detaljerad anomalidata ---
+  2026-04-26 05:00:00+00:00: 0 händelser, severity snitt 0.0, 0 unika IP:n, score -0.252
+  2026-04-26 09:40:00+00:00: 7 händelser, severity snitt 5.7, 2 unika IP:n, score -0.090
+  2026-04-26 10:00:00+00:00: 3 händelser, severity snitt 5.0, 2 unika IP:n, score -0.141
+  2026-04-26 11:45:00+00:00: 11 händelser, severity snitt 6.8, 1 unika IP:n, score -0.098
+  2026-04-26 12:00:00+00:00: 45 händelser, severity snitt 4.1, 2 unika IP:n, score -0.182
+  2026-04-26 12:05:00+00:00: 20 händelser, severity snitt 4.7, 2 unika IP:n, score -0.083
+  2026-04-26 12:10:00+00:00: 3 händelser, severity snitt 3.0, 1 unika IP:n, score -0.112
+  2026-04-26 12:15:00+00:00: 40 händelser, severity snitt 3.5, 1 unika IP:n, score -0.150
+  2026-04-26 12:20:00+00:00: 16 händelser, severity snitt 3.2, 1 unika IP:n, score -0.087
+  2026-04-26 12:40:00+00:00: 27 händelser, severity snitt 6.0, 2 unika IP:n, score -0.121
+  2026-04-26 13:25:00+00:00: 6 händelser, severity snitt 3.0, 1 unika IP:n, score -0.111
+  2026-04-26 13:30:00+00:00: 18 händelser, severity snitt 5.4, 1 unika IP:n, score -0.157
+  2026-04-26 13:50:00+00:00: 16 händelser, severity snitt 3.5, 1 unika IP:n, score -0.051
+
+============================================================

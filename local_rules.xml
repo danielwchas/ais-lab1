@@ -1,0 +1,54 @@
+<!-- Local rules -->
+
+<!-- Modify it at your will. -->
+<!-- Copyright (C) 2015, Wazuh Inc. -->
+
+
+<group name="local,sshd,">
+
+  <!-- Detect 5 failed SSH login attempts within 2 minutes -->
+  <rule id="100001" level="10" frequency="5" timeframe="120">
+    <if_matched_group>authentication_failed</if_matched_group>
+    <description>SSH brute force-attack detected (5+ failed attempts)</description>
+    <mitre>
+      <id>T1110</id>
+    </mitre>
+    <group>authentication_failures,</group>
+  </rule>
+
+  <!-- Detect successful login after failed attempts -->
+  <rule id="100002" level="12">
+    <if_sid>5715</if_sid>
+    <if_matched_sid>100001</if_matched_sid>
+    <same_source_ip/>
+    <description>Successful SSH login after several failed attempts - possible compromise</description>
+    <mitre>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+
+  <!-- Detect login from strange land (demands GeoIP) -->
+  <rule id="100003" level="8">
+    <if_sid>5715</if_sid>
+    <srcip negate="yes">192.168.1.125</srcip>
+    <description>SSH login from external IP - investigate source</description>
+    <group>authentication_success,</group>
+  </rule>
+
+</group>
+
+<group name="local,ai_detection,">
+  <rule id="100010" level="10">
+    <decoded_as>json</decoded_as>
+    <field name="ai_detector">true</field>
+    <field name="severity">critical</field>
+    <description>AI-anomalidetektering: Kritisk avvikelse identifierad</description>
+  </rule>
+
+  <rule id="100011" level="8">
+    <decoded_as>json</decoded_as>
+    <field name="ai_detector">true</field>
+    <field name="severity">high</field>
+    <description>AI-anomalidetektering: Hog avvikelse identifierad</description>
+  </rule>
+</group>

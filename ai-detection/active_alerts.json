@@ -1,0 +1,110 @@
+[
+  {
+    "timestamp": "2026-04-26 05:00:00+00:00",
+    "severity": "high",
+    "detected_at": "2026-04-26T16:24:25.771637",
+    "details": {
+      "event_count": 0,
+      "avg_severity": 0.0,
+      "unique_ips": 0,
+      "anomaly_score": -0.2518,
+      "zscore": -0.41
+    }
+  },
+  {
+    "timestamp": "2026-04-26 10:00:00+00:00",
+    "severity": "medium",
+    "detected_at": "2026-04-26T16:24:25.775106",
+    "details": {
+      "event_count": 3,
+      "avg_severity": 5.0,
+      "unique_ips": 2,
+      "anomaly_score": -0.1413,
+      "zscore": 0.04
+    }
+  },
+  {
+    "timestamp": "2026-04-26 12:00:00+00:00",
+    "severity": "critical",
+    "detected_at": "2026-04-26T16:24:25.776106",
+    "details": {
+      "event_count": 45,
+      "avg_severity": 4.09,
+      "unique_ips": 2,
+      "anomaly_score": -0.182,
+      "zscore": 6.36
+    }
+  },
+  {
+    "timestamp": "2026-04-26 12:05:00+00:00",
+    "severity": "high",
+    "detected_at": "2026-04-26T16:24:25.776241",
+    "details": {
+      "event_count": 20,
+      "avg_severity": 4.65,
+      "unique_ips": 2,
+      "anomaly_score": -0.0835,
+      "zscore": 2.6
+    }
+  },
+  {
+    "timestamp": "2026-04-26 12:10:00+00:00",
+    "severity": "medium",
+    "detected_at": "2026-04-26T16:24:25.776357",
+    "details": {
+      "event_count": 3,
+      "avg_severity": 3.0,
+      "unique_ips": 1,
+      "anomaly_score": -0.1122,
+      "zscore": 0.04
+    }
+  },
+  {
+    "timestamp": "2026-04-26 12:15:00+00:00",
+    "severity": "critical",
+    "detected_at": "2026-04-26T16:24:25.776474",
+    "details": {
+      "event_count": 40,
+      "avg_severity": 3.55,
+      "unique_ips": 1,
+      "anomaly_score": -0.1498,
+      "zscore": 5.61
+    }
+  },
+  {
+    "timestamp": "2026-04-26 12:40:00+00:00",
+    "severity": "critical",
+    "detected_at": "2026-04-26T16:24:25.776734",
+    "details": {
+      "event_count": 27,
+      "avg_severity": 6.04,
+      "unique_ips": 2,
+      "anomaly_score": -0.1207,
+      "zscore": 3.65
+    }
+  },
+  {
+    "timestamp": "2026-04-26 13:25:00+00:00",
+    "severity": "medium",
+    "detected_at": "2026-04-26T16:24:25.777125",
+    "details": {
+      "event_count": 6,
+      "avg_severity": 3.0,
+      "unique_ips": 1,
+      "anomaly_score": -0.1107,
+      "zscore": 0.49
+    }
+  },
+  {
+    "timestamp": "2026-04-26 13:30:00+00:00",
+    "severity": "medium",
+    "detected_at": "2026-04-26T16:24:25.777237",
+    "details": {
+      "event_count": 18,
+      "avg_severity": 5.39,
+      "unique_ips": 1,
+      "anomaly_score": -0.1571,
+      "zscore": 2.3
+    }
+  }
+]
