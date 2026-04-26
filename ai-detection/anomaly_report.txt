@@ -2,28 +2,41 @@
   ANOMALIDETEKTERINGSRAPPORT
 ============================================================
 
-Analyserad period: 2026-04-26 02:25:00+00:00 — 2026-04-26 14:15:00+00:00
-Antal tidsperioder analyserade: 143
+Analyserad period: 2026-04-25 16:20:00+00:00 — 2026-04-26 15:10:00+00:00
+Antal tidsperioder analyserade: 275
 
 --- Isolation Forest ---
-Anomalier detekterade: 13
+Anomalier detekterade: 26
 
 --- Statistisk baslinje (z-score) ---
-Anomalier detekterade: 5
+Anomalier detekterade: 25
 
 --- Detaljerad anomalidata ---
-  2026-04-26 05:00:00+00:00: 0 händelser, severity snitt 0.0, 0 unika IP:n, score -0.252
-  2026-04-26 09:40:00+00:00: 7 händelser, severity snitt 5.7, 2 unika IP:n, score -0.090
-  2026-04-26 10:00:00+00:00: 3 händelser, severity snitt 5.0, 2 unika IP:n, score -0.141
-  2026-04-26 11:45:00+00:00: 11 händelser, severity snitt 6.8, 1 unika IP:n, score -0.098
-  2026-04-26 12:00:00+00:00: 45 händelser, severity snitt 4.1, 2 unika IP:n, score -0.182
-  2026-04-26 12:05:00+00:00: 20 händelser, severity snitt 4.7, 2 unika IP:n, score -0.083
-  2026-04-26 12:10:00+00:00: 3 händelser, severity snitt 3.0, 1 unika IP:n, score -0.112
-  2026-04-26 12:15:00+00:00: 40 händelser, severity snitt 3.5, 1 unika IP:n, score -0.150
-  2026-04-26 12:20:00+00:00: 16 händelser, severity snitt 3.2, 1 unika IP:n, score -0.087
-  2026-04-26 12:40:00+00:00: 27 händelser, severity snitt 6.0, 2 unika IP:n, score -0.121
-  2026-04-26 13:25:00+00:00: 6 händelser, severity snitt 3.0, 1 unika IP:n, score -0.111
-  2026-04-26 13:30:00+00:00: 18 händelser, severity snitt 5.4, 1 unika IP:n, score -0.157
-  2026-04-26 13:50:00+00:00: 16 händelser, severity snitt 3.5, 1 unika IP:n, score -0.051
+  2026-04-25 16:20:00+00:00: 6 händelser, severity snitt 3.0, 1 unika IP:n, score -0.099
+  2026-04-25 16:25:00+00:00: 12 händelser, severity snitt 5.3, 2 unika IP:n, score -0.064
+  2026-04-25 16:35:00+00:00: 12 händelser, severity snitt 5.0, 2 unika IP:n, score -0.004
+  2026-04-25 16:55:00+00:00: 12 händelser, severity snitt 5.0, 2 unika IP:n, score -0.004
+  2026-04-25 17:00:00+00:00: 16 händelser, severity snitt 5.1, 2 unika IP:n, score -0.047
+  2026-04-25 17:15:00+00:00: 12 händelser, severity snitt 5.0, 2 unika IP:n, score -0.004
+  2026-04-25 17:35:00+00:00: 9 händelser, severity snitt 5.0, 2 unika IP:n, score -0.056
+  2026-04-25 20:25:00+00:00: 2 händelser, severity snitt 8.5, 1 unika IP:n, score -0.082
+  2026-04-25 22:00:00+00:00: 2 händelser, severity snitt 7.5, 1 unika IP:n, score -0.082
+  2026-04-25 23:45:00+00:00: 12 händelser, severity snitt 7.1, 1 unika IP:n, score -0.172
+  2026-04-26 05:00:00+00:00: 0 händelser, severity snitt 0.0, 0 unika IP:n, score -0.249
+  2026-04-26 09:40:00+00:00: 7 händelser, severity snitt 5.7, 2 unika IP:n, score -0.075
+  2026-04-26 10:00:00+00:00: 3 händelser, severity snitt 5.0, 2 unika IP:n, score -0.109
+  2026-04-26 11:45:00+00:00: 11 händelser, severity snitt 6.8, 1 unika IP:n, score -0.091
+  2026-04-26 12:00:00+00:00: 45 händelser, severity snitt 4.1, 2 unika IP:n, score -0.206
+  2026-04-26 12:05:00+00:00: 20 händelser, severity snitt 4.7, 2 unika IP:n, score -0.099
+  2026-04-26 12:10:00+00:00: 3 händelser, severity snitt 3.0, 1 unika IP:n, score -0.135
+  2026-04-26 12:15:00+00:00: 40 händelser, severity snitt 3.5, 1 unika IP:n, score -0.182
+  2026-04-26 12:20:00+00:00: 16 händelser, severity snitt 3.2, 1 unika IP:n, score -0.096
+  2026-04-26 12:40:00+00:00: 27 händelser, severity snitt 6.0, 2 unika IP:n, score -0.134
+  2026-04-26 13:25:00+00:00: 6 händelser, severity snitt 3.0, 1 unika IP:n, score -0.099
+  2026-04-26 13:30:00+00:00: 18 händelser, severity snitt 5.4, 1 unika IP:n, score -0.148
+  2026-04-26 13:50:00+00:00: 16 händelser, severity snitt 3.5, 1 unika IP:n, score -0.077
+  2026-04-26 14:55:00+00:00: 15 händelser, severity snitt 5.9, 1 unika IP:n, score -0.101
+  2026-04-26 15:05:00+00:00: 14 händelser, severity snitt 5.4, 2 unika IP:n, score -0.003
+  2026-04-26 15:10:00+00:00: 35 händelser, severity snitt 5.1, 2 unika IP:n, score -0.165
 
 ============================================================
