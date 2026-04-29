@@ -143,5 +143,295 @@
     "severity": "critical",
     "message": "Kritisk incident: {'event_count': 35, 'avg_severity': 5.09, 'unique_ips': 2, 'anomaly_score': -0.1649, 'zscore': 5.33}",
     "timestamp": "2026-04-26T17:15:09.092976"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T17:23:58.054143"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T17:23:58.056148"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T17:23:58.056463"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T17:23:58.058849"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 16, 'avg_severity': 5.12, 'unique_ips': 2, 'anomaly_score': -0.0471, 'zscore': 2.18}",
+    "timestamp": "2026-04-28T17:23:58.059504"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T17:23:58.059814"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T17:23:58.060244"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T17:23:58.060612"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T17:23:58.061024"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T17:23:58.062928"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 12, 'avg_severity': 7.08, 'unique_ips': 1, 'anomaly_score': -0.1722, 'zscore': 1.51}",
+    "timestamp": "2026-04-28T17:23:58.063343"
+  },
+  {
+    "severity": "high",
+    "message": "H\u00f6g incident: {'event_count': 0, 'avg_severity': 0.0, 'unique_ips': 0, 'anomaly_score': -0.2494, 'zscore': -0.48}",
+    "timestamp": "2026-04-28T17:23:58.063768"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 16, 'avg_severity': 5.31, 'unique_ips': 2, 'anomaly_score': 0.0097, 'zscore': 2.18}",
+    "timestamp": "2026-04-28T17:23:58.064249"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 16, 'avg_severity': 5.31, 'unique_ips': 2, 'anomaly_score': 0.0097, 'zscore': 2.18}",
+    "timestamp": "2026-04-28T17:23:58.064607"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 16, 'avg_severity': 5.31, 'unique_ips': 2, 'anomaly_score': 0.0097, 'zscore': 2.18}",
+    "timestamp": "2026-04-28T17:23:58.065053"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 3, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': -0.1086, 'zscore': 0.02}",
+    "timestamp": "2026-04-28T17:23:58.065441"
+  },
+  {
+    "severity": "critical",
+    "message": "Kritisk incident: {'event_count': 45, 'avg_severity': 4.09, 'unique_ips': 2, 'anomaly_score': -0.2065, 'zscore': 6.99}",
+    "timestamp": "2026-04-28T17:23:58.065866"
+  },
+  {
+    "severity": "high",
+    "message": "H\u00f6g incident: {'event_count': 20, 'avg_severity': 4.65, 'unique_ips': 2, 'anomaly_score': -0.0986, 'zscore': 2.84}",
+    "timestamp": "2026-04-28T17:23:58.066268"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 3, 'avg_severity': 3.0, 'unique_ips': 1, 'anomaly_score': -0.1346, 'zscore': 0.02}",
+    "timestamp": "2026-04-28T17:23:58.066699"
+  },
+  {
+    "severity": "critical",
+    "message": "Kritisk incident: {'event_count': 40, 'avg_severity': 3.55, 'unique_ips': 1, 'anomaly_score': -0.1817, 'zscore': 6.16}",
+    "timestamp": "2026-04-28T17:23:58.067142"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 16, 'avg_severity': 3.25, 'unique_ips': 1, 'anomaly_score': -0.0957, 'zscore': 2.18}",
+    "timestamp": "2026-04-28T17:23:58.067549"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.67, 'unique_ips': 2, 'anomaly_score': 0.0, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T17:23:58.068002"
+  },
+  {
+    "severity": "critical",
+    "message": "Kritisk incident: {'event_count': 27, 'avg_severity': 6.04, 'unique_ips': 2, 'anomaly_score': -0.1343, 'zscore': 4.0}",
+    "timestamp": "2026-04-28T17:23:58.070128"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.67, 'unique_ips': 2, 'anomaly_score': 0.0, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T17:23:58.070690"
+  },
+  {
+    "severity": "high",
+    "message": "H\u00f6g incident: {'event_count': 18, 'avg_severity': 5.39, 'unique_ips': 1, 'anomaly_score': -0.148, 'zscore': 2.51}",
+    "timestamp": "2026-04-28T17:23:58.071894"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 16, 'avg_severity': 3.5, 'unique_ips': 1, 'anomaly_score': -0.0772, 'zscore': 2.18}",
+    "timestamp": "2026-04-28T17:23:58.072438"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.67, 'unique_ips': 2, 'anomaly_score': 0.0, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T17:23:58.074756"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.87, 'unique_ips': 1, 'anomaly_score': -0.1008, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T17:23:58.075942"
+  },
+  {
+    "severity": "critical",
+    "message": "Kritisk incident: {'event_count': 35, 'avg_severity': 5.09, 'unique_ips': 2, 'anomaly_score': -0.1649, 'zscore': 5.33}",
+    "timestamp": "2026-04-28T17:23:58.076605"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T18:46:32.136145"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T18:46:32.137438"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T18:46:32.137990"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T18:46:32.140103"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 16, 'avg_severity': 5.12, 'unique_ips': 2, 'anomaly_score': -0.0471, 'zscore': 2.18}",
+    "timestamp": "2026-04-28T18:46:32.140712"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T18:46:32.141314"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T18:46:32.141969"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T18:46:32.142574"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T18:46:32.144830"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': 0.0407, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T18:46:32.145878"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 12, 'avg_severity': 7.08, 'unique_ips': 1, 'anomaly_score': -0.1722, 'zscore': 1.51}",
+    "timestamp": "2026-04-28T18:46:32.147302"
+  },
+  {
+    "severity": "high",
+    "message": "H\u00f6g incident: {'event_count': 0, 'avg_severity': 0.0, 'unique_ips': 0, 'anomaly_score': -0.2494, 'zscore': -0.48}",
+    "timestamp": "2026-04-28T18:46:32.148092"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 16, 'avg_severity': 5.31, 'unique_ips': 2, 'anomaly_score': 0.0097, 'zscore': 2.18}",
+    "timestamp": "2026-04-28T18:46:32.167592"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 16, 'avg_severity': 5.31, 'unique_ips': 2, 'anomaly_score': 0.0097, 'zscore': 2.18}",
+    "timestamp": "2026-04-28T18:46:32.168139"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 16, 'avg_severity': 5.31, 'unique_ips': 2, 'anomaly_score': 0.0097, 'zscore': 2.18}",
+    "timestamp": "2026-04-28T18:46:32.168577"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 3, 'avg_severity': 5.0, 'unique_ips': 2, 'anomaly_score': -0.1086, 'zscore': 0.02}",
+    "timestamp": "2026-04-28T18:46:32.169114"
+  },
+  {
+    "severity": "critical",
+    "message": "Kritisk incident: {'event_count': 45, 'avg_severity': 4.09, 'unique_ips': 2, 'anomaly_score': -0.2065, 'zscore': 6.99}",
+    "timestamp": "2026-04-28T18:46:32.169673"
+  },
+  {
+    "severity": "high",
+    "message": "H\u00f6g incident: {'event_count': 20, 'avg_severity': 4.65, 'unique_ips': 2, 'anomaly_score': -0.0986, 'zscore': 2.84}",
+    "timestamp": "2026-04-28T18:46:32.170198"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 3, 'avg_severity': 3.0, 'unique_ips': 1, 'anomaly_score': -0.1346, 'zscore': 0.02}",
+    "timestamp": "2026-04-28T18:46:32.172505"
+  },
+  {
+    "severity": "critical",
+    "message": "Kritisk incident: {'event_count': 40, 'avg_severity': 3.55, 'unique_ips': 1, 'anomaly_score': -0.1817, 'zscore': 6.16}",
+    "timestamp": "2026-04-28T18:46:32.173302"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 16, 'avg_severity': 3.25, 'unique_ips': 1, 'anomaly_score': -0.0957, 'zscore': 2.18}",
+    "timestamp": "2026-04-28T18:46:32.173998"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.67, 'unique_ips': 2, 'anomaly_score': 0.0, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T18:46:32.174652"
+  },
+  {
+    "severity": "critical",
+    "message": "Kritisk incident: {'event_count': 27, 'avg_severity': 6.04, 'unique_ips': 2, 'anomaly_score': -0.1343, 'zscore': 4.0}",
+    "timestamp": "2026-04-28T18:46:32.176923"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.67, 'unique_ips': 2, 'anomaly_score': 0.0, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T18:46:32.178410"
+  },
+  {
+    "severity": "high",
+    "message": "H\u00f6g incident: {'event_count': 18, 'avg_severity': 5.39, 'unique_ips': 1, 'anomaly_score': -0.148, 'zscore': 2.51}",
+    "timestamp": "2026-04-28T18:46:32.179815"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 16, 'avg_severity': 3.5, 'unique_ips': 1, 'anomaly_score': -0.0772, 'zscore': 2.18}",
+    "timestamp": "2026-04-28T18:46:32.180560"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.67, 'unique_ips': 2, 'anomaly_score': 0.0, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T18:46:32.183112"
+  },
+  {
+    "severity": "medium",
+    "message": "Medium incident: {'event_count': 15, 'avg_severity': 5.87, 'unique_ips': 1, 'anomaly_score': -0.1008, 'zscore': 2.01}",
+    "timestamp": "2026-04-28T18:46:32.184071"
+  },
+  {
+    "severity": "critical",
+    "message": "Kritisk incident: {'event_count': 35, 'avg_severity': 5.09, 'unique_ips': 2, 'anomaly_score': -0.1649, 'zscore': 5.33}",
+    "timestamp": "2026-04-28T18:46:32.184786"
   }
 ]
