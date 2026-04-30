@@ -1,3 +1,5 @@
+Credentials used in this project are default lab settings and are not used in production.
+
 # Lab 1 - Centraliserad säkerhetsövervakning
 En labb för att sätta upp och använda Wazuh som centraliserad säkerhet.  
 Labben föreslår/kräver Ubuntu, men eftersom jag inte gillar Ubuntu och använder mig av CachyOS med fish shell (istället för bash) hemma så har jag fått skriva om många kommandon. fish shell beter sig lite annorlunda mot bash, men det har fungerat när jag har tagit mig förbi det.  
