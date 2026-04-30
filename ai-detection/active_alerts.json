@@ -1,62 +1,62 @@
 [
   {
-    "timestamp": "2026-04-29 19:00:00+00:00",
-    "severity": "critical",
-    "detected_at": "2026-04-30T12:22:43.369013",
-    "details": {
-      "event_count": 20,
-      "avg_severity": 7.55,
-      "unique_ips": 1,
-      "anomaly_score": -0.2945,
-      "zscore": 7.5
-    }
-  },
-  {
-    "timestamp": "2026-04-29 22:00:00+00:00",
-    "severity": "critical",
-    "detected_at": "2026-04-30T12:22:43.373271",
-    "details": {
-      "event_count": 1,
-      "avg_severity": 5.0,
-      "unique_ips": 1,
-      "anomaly_score": -0.3501,
-      "zscore": 0.23
-    }
-  },
-  {
     "timestamp": "2026-04-30 07:05:00+00:00",
     "severity": "critical",
-    "detected_at": "2026-04-30T12:22:43.378556",
+    "detected_at": "2026-04-30T12:52:09.010048",
     "details": {
       "event_count": 20,
       "avg_severity": 7.55,
       "unique_ips": 1,
-      "anomaly_score": -0.2945,
-      "zscore": 7.5
+      "anomaly_score": -0.2342,
+      "zscore": 3.79
     }
   },
   {
     "timestamp": "2026-04-30 10:15:00+00:00",
-    "severity": "critical",
-    "detected_at": "2026-04-30T12:22:43.381139",
+    "severity": "high",
+    "detected_at": "2026-04-30T12:52:09.011568",
     "details": {
       "event_count": 14,
       "avg_severity": 5.36,
       "unique_ips": 2,
-      "anomaly_score": -0.3192,
-      "zscore": 5.21
+      "anomaly_score": -0.1873,
+      "zscore": 2.56
     }
   },
   {
     "timestamp": "2026-04-30 10:20:00+00:00",
     "severity": "critical",
-    "detected_at": "2026-04-30T12:22:43.381423",
+    "detected_at": "2026-04-30T12:52:09.011712",
     "details": {
       "event_count": 17,
       "avg_severity": 4.94,
       "unique_ips": 2,
-      "anomaly_score": -0.3232,
-      "zscore": 6.35
+      "anomaly_score": -0.1125,
+      "zscore": 3.18
+    }
+  },
+  {
+    "timestamp": "2026-04-30 10:25:00+00:00",
+    "severity": "high",
+    "detected_at": "2026-04-30T12:52:09.011838",
+    "details": {
+      "event_count": 1,
+      "avg_severity": 5.0,
+      "unique_ips": 1,
+      "anomaly_score": -0.2263,
+      "zscore": -0.1
+    }
+  },
+  {
+    "timestamp": "2026-04-30 10:50:00+00:00",
+    "severity": "critical",
+    "detected_at": "2026-04-30T12:52:09.012104",
+    "details": {
+      "event_count": 17,
+      "avg_severity": 4.94,
+      "unique_ips": 2,
+      "anomaly_score": -0.1125,
+      "zscore": 3.18
     }
   }
 ]

@@ -1,5 +1,5 @@
 {
-    "took": 8,
+    "took": 7,
     "timed_out": false,
     "_shards": {
         "total": 60,
@@ -9,7 +9,7 @@
     },
     "hits": {
         "total": {
-            "value": 72,
+            "value": 90,
             "relation": "eq"
         },
         "max_score": 1.0,
@@ -201,6 +201,327 @@
                     "location": "rootcheck",
                     "id": "1777489350.31129",
                     "timestamp": "2026-04-29T19:02:30.786+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "uocD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "sudo",
+                        "timestamp": "Apr 30 10:50:33"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "srcuser": "daniel",
+                        "uid": "1000",
+                        "dstuser": "root"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 3,
+                        "pci_dss": [
+                            "10.2.5"
+                        ],
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "tsc": [
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "PAM: Login session opened.",
+                        "groups": [
+                            "pam",
+                            "syslog",
+                            "authentication_success"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 2,
+                        "mitre": {
+                            "technique": [
+                                "Valid Accounts"
+                            ],
+                            "id": [
+                                "T1078"
+                            ],
+                            "tactic": [
+                                "Defense Evasion",
+                                "Persistence",
+                                "Privilege Escalation",
+                                "Initial Access"
+                            ]
+                        },
+                        "id": "5501",
+                        "gpg13": [
+                            "7.8",
+                            "7.9"
+                        ]
+                    },
+                    "decoder": {
+                        "parent": "pam",
+                        "name": "pam"
+                    },
+                    "full_log": "Apr 30 10:50:33 cachyos-x8664 sudo[112718]: pam_unix(sudo:session): session opened for user root(uid=0) by daniel(uid=1000)",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:35.818Z",
+                    "location": "journald",
+                    "id": "1777546235.23843",
+                    "timestamp": "2026-04-30T10:50:35.818+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "u4cD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "sudo",
+                        "timestamp": "Apr 30 10:50:33"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "dstuser": "root"
+                    },
+                    "rule": {
+                        "firedtimes": 2,
+                        "mail": false,
+                        "level": 3,
+                        "pci_dss": [
+                            "10.2.5"
+                        ],
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "tsc": [
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "PAM: Login session closed.",
+                        "groups": [
+                            "pam",
+                            "syslog"
+                        ],
+                        "id": "5502",
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gpg13": [
+                            "7.8",
+                            "7.9"
+                        ],
+                        "gdpr": [
+                            "IV_32.2"
+                        ]
+                    },
+                    "decoder": {
+                        "parent": "pam",
+                        "name": "pam"
+                    },
+                    "full_log": "Apr 30 10:50:33 cachyos-x8664 sudo[112718]: pam_unix(sudo:session): session closed for user root",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:35.821Z",
+                    "location": "journald",
+                    "id": "1777546235.24286",
+                    "timestamp": "2026-04-30T10:50:35.821+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "wocD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "unix_chkpwd",
+                        "timestamp": "Apr 30 10:50:34"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "srcuser": "root"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 5,
+                        "pci_dss": [
+                            "10.2.4",
+                            "10.2.5"
+                        ],
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "tsc": [
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "unix_chkpwd: Password check failed.",
+                        "groups": [
+                            "pam",
+                            "syslog",
+                            "authentication_failed"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_35.7.d",
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 14,
+                        "mitre": {
+                            "technique": [
+                                "Password Guessing"
+                            ],
+                            "id": [
+                                "T1110.001"
+                            ],
+                            "tactic": [
+                                "Credential Access"
+                            ]
+                        },
+                        "id": "5557",
+                        "gpg13": [
+                            "4.3"
+                        ]
+                    },
+                    "decoder": {
+                        "name": "unix_chkpwd"
+                    },
+                    "full_log": "Apr 30 10:50:34 cachyos-x8664 unix_chkpwd[112741]: password check failed for user (root)",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:35.839Z",
+                    "location": "journald",
+                    "id": "1777546235.27558",
+                    "timestamp": "2026-04-30T10:50:35.839+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "xocD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "sshd-session",
+                        "timestamp": "Apr 30 10:50:36"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "srcip": "127.0.0.1",
+                        "dstuser": "root",
+                        "srcport": "45096"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 5,
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "pci_dss": [
+                            "10.2.4",
+                            "10.2.5"
+                        ],
+                        "tsc": [
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "sshd: authentication failed.",
+                        "groups": [
+                            "syslog",
+                            "sshd",
+                            "authentication_failed"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_35.7.d",
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 13,
+                        "mitre": {
+                            "technique": [
+                                "Password Guessing",
+                                "SSH"
+                            ],
+                            "id": [
+                                "T1110.001",
+                                "T1021.004"
+                            ],
+                            "tactic": [
+                                "Credential Access",
+                                "Lateral Movement"
+                            ]
+                        },
+                        "id": "5760",
+                        "gpg13": [
+                            "7.1"
+                        ]
+                    },
+                    "decoder": {
+                        "parent": "sshd",
+                        "name": "sshd"
+                    },
+                    "full_log": "Apr 30 10:50:36 cachyos-x8664 sshd-session[112732]: Failed password for root from 127.0.0.1 port 45096 ssh2",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:37.819Z",
+                    "location": "journald",
+                    "id": "1777546237.29718",
+                    "timestamp": "2026-04-30T10:50:37.819+0000"
                 }
             },
             {
@@ -1660,6 +1981,679 @@
                     "location": "rootcheck",
                     "id": "1777489348.29255",
                     "timestamp": "2026-04-29T19:02:28.851+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "uYcD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "sudo",
+                        "timestamp": "Apr 30 10:50:33"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "srcuser": "daniel",
+                        "dstuser": "root",
+                        "tty": "pts/1",
+                        "pwd": "/home/daniel/ais-2026/lab1/ai-detection",
+                        "command": "/usr/bin/touch /etc/test-incident-file"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 3,
+                        "pci_dss": [
+                            "10.2.5",
+                            "10.2.2"
+                        ],
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "tsc": [
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "Successful sudo to ROOT executed.",
+                        "groups": [
+                            "syslog",
+                            "sudo"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7",
+                            "AC.6"
+                        ],
+                        "gdpr": [
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 2,
+                        "mitre": {
+                            "technique": [
+                                "Sudo and Sudo Caching"
+                            ],
+                            "id": [
+                                "T1548.003"
+                            ],
+                            "tactic": [
+                                "Privilege Escalation",
+                                "Defense Evasion"
+                            ]
+                        },
+                        "id": "5402",
+                        "gpg13": [
+                            "7.6",
+                            "7.8",
+                            "7.13"
+                        ]
+                    },
+                    "decoder": {
+                        "parent": "sudo",
+                        "name": "sudo",
+                        "ftscomment": "First time user executed the sudo command"
+                    },
+                    "full_log": "Apr 30 10:50:33 cachyos-x8664 sudo[112718]:   daniel : TTY=pts/1 ; PWD=/home/daniel/ais-2026/lab1/ai-detection ; USER=root ; COMMAND=/usr/bin/touch /etc/test-incident-file",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:35.818Z",
+                    "location": "journald",
+                    "id": "1777546235.23230",
+                    "timestamp": "2026-04-30T10:50:35.818+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "vIcD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "unix_chkpwd",
+                        "timestamp": "Apr 30 10:50:34"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "srcuser": "root"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 5,
+                        "pci_dss": [
+                            "10.2.4",
+                            "10.2.5"
+                        ],
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "tsc": [
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "unix_chkpwd: Password check failed.",
+                        "groups": [
+                            "pam",
+                            "syslog",
+                            "authentication_failed"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_35.7.d",
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 11,
+                        "mitre": {
+                            "technique": [
+                                "Password Guessing"
+                            ],
+                            "id": [
+                                "T1110.001"
+                            ],
+                            "tactic": [
+                                "Credential Access"
+                            ]
+                        },
+                        "id": "5557",
+                        "gpg13": [
+                            "4.3"
+                        ]
+                    },
+                    "decoder": {
+                        "name": "unix_chkpwd"
+                    },
+                    "full_log": "Apr 30 10:50:34 cachyos-x8664 unix_chkpwd[112739]: password check failed for user (root)",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:35.827Z",
+                    "location": "journald",
+                    "id": "1777546235.24669",
+                    "timestamp": "2026-04-30T10:50:35.827+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "vYcD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "sshd-session",
+                        "timestamp": "Apr 30 10:50:34"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "uid": "0",
+                        "srcip": "127.0.0.1",
+                        "euid": "0",
+                        "dstuser": "root",
+                        "tty": "ssh"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 5,
+                        "pci_dss": [
+                            "10.2.4",
+                            "10.2.5"
+                        ],
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "tsc": [
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "PAM: User login failed.",
+                        "groups": [
+                            "pam",
+                            "syslog",
+                            "authentication_failed"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_35.7.d",
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 7,
+                        "mitre": {
+                            "technique": [
+                                "Password Guessing"
+                            ],
+                            "id": [
+                                "T1110.001"
+                            ],
+                            "tactic": [
+                                "Credential Access"
+                            ]
+                        },
+                        "id": "5503",
+                        "gpg13": [
+                            "7.8"
+                        ]
+                    },
+                    "decoder": {
+                        "name": "pam"
+                    },
+                    "full_log": "Apr 30 10:50:34 cachyos-x8664 sshd-session[112731]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=root",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:35.829Z",
+                    "location": "journald",
+                    "id": "1777546235.25094",
+                    "timestamp": "2026-04-30T10:50:35.829+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "vocD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "unix_chkpwd",
+                        "timestamp": "Apr 30 10:50:34"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "srcuser": "root"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 5,
+                        "pci_dss": [
+                            "10.2.4",
+                            "10.2.5"
+                        ],
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "tsc": [
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "unix_chkpwd: Password check failed.",
+                        "groups": [
+                            "pam",
+                            "syslog",
+                            "authentication_failed"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_35.7.d",
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 12,
+                        "mitre": {
+                            "technique": [
+                                "Password Guessing"
+                            ],
+                            "id": [
+                                "T1110.001"
+                            ],
+                            "tactic": [
+                                "Credential Access"
+                            ]
+                        },
+                        "id": "5557",
+                        "gpg13": [
+                            "4.3"
+                        ]
+                    },
+                    "decoder": {
+                        "name": "unix_chkpwd"
+                    },
+                    "full_log": "Apr 30 10:50:34 cachyos-x8664 unix_chkpwd[112738]: password check failed for user (root)",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:35.831Z",
+                    "location": "journald",
+                    "id": "1777546235.25632",
+                    "timestamp": "2026-04-30T10:50:35.831+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "v4cD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "sshd-session",
+                        "timestamp": "Apr 30 10:50:34"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "uid": "0",
+                        "srcip": "127.0.0.1",
+                        "euid": "0",
+                        "dstuser": "root",
+                        "tty": "ssh"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 5,
+                        "pci_dss": [
+                            "10.2.4",
+                            "10.2.5"
+                        ],
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "tsc": [
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "PAM: User login failed.",
+                        "groups": [
+                            "pam",
+                            "syslog",
+                            "authentication_failed"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_35.7.d",
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 8,
+                        "mitre": {
+                            "technique": [
+                                "Password Guessing"
+                            ],
+                            "id": [
+                                "T1110.001"
+                            ],
+                            "tactic": [
+                                "Credential Access"
+                            ]
+                        },
+                        "id": "5503",
+                        "gpg13": [
+                            "7.8"
+                        ]
+                    },
+                    "decoder": {
+                        "name": "pam"
+                    },
+                    "full_log": "Apr 30 10:50:34 cachyos-x8664 sshd-session[112730]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=root",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:35.833Z",
+                    "location": "journald",
+                    "id": "1777546235.26057",
+                    "timestamp": "2026-04-30T10:50:35.833+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "xIcD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "sshd-session",
+                        "timestamp": "Apr 30 10:50:35"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "srcip": "127.0.0.1",
+                        "dstuser": "root",
+                        "srcport": "45108"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 5,
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "pci_dss": [
+                            "10.2.4",
+                            "10.2.5"
+                        ],
+                        "tsc": [
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "sshd: authentication failed.",
+                        "groups": [
+                            "syslog",
+                            "sshd",
+                            "authentication_failed"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_35.7.d",
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 11,
+                        "mitre": {
+                            "technique": [
+                                "Password Guessing",
+                                "SSH"
+                            ],
+                            "id": [
+                                "T1110.001",
+                                "T1021.004"
+                            ],
+                            "tactic": [
+                                "Credential Access",
+                                "Lateral Movement"
+                            ]
+                        },
+                        "id": "5760",
+                        "gpg13": [
+                            "7.1"
+                        ]
+                    },
+                    "decoder": {
+                        "parent": "sshd",
+                        "name": "sshd"
+                    },
+                    "full_log": "Apr 30 10:50:35 cachyos-x8664 sshd-session[112733]: Failed password for root from 127.0.0.1 port 45108 ssh2",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:35.843Z",
+                    "location": "journald",
+                    "id": "1777546235.28752",
+                    "timestamp": "2026-04-30T10:50:35.843+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "yIcD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "sshd-session",
+                        "timestamp": "Apr 30 10:50:36"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "srcip": "127.0.0.1",
+                        "dstuser": "root",
+                        "srcport": "45082"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 5,
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "pci_dss": [
+                            "10.2.4",
+                            "10.2.5"
+                        ],
+                        "tsc": [
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "sshd: authentication failed.",
+                        "groups": [
+                            "syslog",
+                            "sshd",
+                            "authentication_failed"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_35.7.d",
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 14,
+                        "mitre": {
+                            "technique": [
+                                "Password Guessing",
+                                "SSH"
+                            ],
+                            "id": [
+                                "T1110.001",
+                                "T1021.004"
+                            ],
+                            "tactic": [
+                                "Credential Access",
+                                "Lateral Movement"
+                            ]
+                        },
+                        "id": "5760",
+                        "gpg13": [
+                            "7.1"
+                        ]
+                    },
+                    "decoder": {
+                        "parent": "sshd",
+                        "name": "sshd"
+                    },
+                    "full_log": "Apr 30 10:50:36 cachyos-x8664 sshd-session[112731]: Failed password for root from 127.0.0.1 port 45082 ssh2",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:37.827Z",
+                    "location": "journald",
+                    "id": "1777546237.30626",
+                    "timestamp": "2026-04-30T10:50:37.827+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "rIft3Z0BcakiGL8UiLkz",
+                "_score": 1.0,
+                "_source": {
+                    "syscheck": {
+                        "uname_after": "root",
+                        "mtime_after": "2026-04-30T10:21:34",
+                        "size_after": "0",
+                        "gid_after": "0",
+                        "mode": "scheduled",
+                        "path": "/etc/test-incident-file",
+                        "sha1_after": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "gname_after": "root",
+                        "uid_after": "0",
+                        "perm_after": "rw-r--r--",
+                        "event": "added",
+                        "md5_after": "d41d8cd98f00b204e9800998ecf8427e",
+                        "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                        "inode_after": 5734250
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "rule": {
+                        "firedtimes": 1,
+                        "mail": false,
+                        "level": 5,
+                        "pci_dss": [
+                            "11.5"
+                        ],
+                        "hipaa": [
+                            "164.312.c.1",
+                            "164.312.c.2"
+                        ],
+                        "tsc": [
+                            "PI1.4",
+                            "PI1.5",
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "File added to the system.",
+                        "groups": [
+                            "ossec",
+                            "syscheck",
+                            "syscheck_entry_added",
+                            "syscheck_file"
+                        ],
+                        "id": "554",
+                        "nist_800_53": [
+                            "SI.7"
+                        ],
+                        "gpg13": [
+                            "4.11"
+                        ],
+                        "gdpr": [
+                            "II_5.1.f"
+                        ]
+                    },
+                    "decoder": {
+                        "name": "syscheck_new_entry"
+                    },
+                    "full_log": "File '/etc/test-incident-file' added\nMode: scheduled\n",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:27:00.073Z",
+                    "location": "syscheck",
+                    "id": "1777544820.22537",
+                    "timestamp": "2026-04-30T10:27:00.073+0000"
                 }
             },
             {
@@ -3522,6 +4516,490 @@
                     "location": "rootcheck",
                     "id": "1777489350.31508",
                     "timestamp": "2026-04-29T19:02:30.789+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "wIcD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "unix_chkpwd",
+                        "timestamp": "Apr 30 10:50:34"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "srcuser": "root"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 5,
+                        "pci_dss": [
+                            "10.2.4",
+                            "10.2.5"
+                        ],
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "tsc": [
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "unix_chkpwd: Password check failed.",
+                        "groups": [
+                            "pam",
+                            "syslog",
+                            "authentication_failed"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_35.7.d",
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 13,
+                        "mitre": {
+                            "technique": [
+                                "Password Guessing"
+                            ],
+                            "id": [
+                                "T1110.001"
+                            ],
+                            "tactic": [
+                                "Credential Access"
+                            ]
+                        },
+                        "id": "5557",
+                        "gpg13": [
+                            "4.3"
+                        ]
+                    },
+                    "decoder": {
+                        "name": "unix_chkpwd"
+                    },
+                    "full_log": "Apr 30 10:50:34 cachyos-x8664 unix_chkpwd[112740]: password check failed for user (root)",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:35.835Z",
+                    "location": "journald",
+                    "id": "1777546235.26595",
+                    "timestamp": "2026-04-30T10:50:35.835+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "wYcD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "sshd-session",
+                        "timestamp": "Apr 30 10:50:34"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "uid": "0",
+                        "srcip": "127.0.0.1",
+                        "euid": "0",
+                        "dstuser": "root",
+                        "tty": "ssh"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 5,
+                        "pci_dss": [
+                            "10.2.4",
+                            "10.2.5"
+                        ],
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "tsc": [
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "PAM: User login failed.",
+                        "groups": [
+                            "pam",
+                            "syslog",
+                            "authentication_failed"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_35.7.d",
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 9,
+                        "mitre": {
+                            "technique": [
+                                "Password Guessing"
+                            ],
+                            "id": [
+                                "T1110.001"
+                            ],
+                            "tactic": [
+                                "Credential Access"
+                            ]
+                        },
+                        "id": "5503",
+                        "gpg13": [
+                            "7.8"
+                        ]
+                    },
+                    "decoder": {
+                        "name": "pam"
+                    },
+                    "full_log": "Apr 30 10:50:34 cachyos-x8664 sshd-session[112732]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=root",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:35.837Z",
+                    "location": "journald",
+                    "id": "1777546235.27020",
+                    "timestamp": "2026-04-30T10:50:35.837+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "w4cD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "data": {
+                        "uid": "0",
+                        "srcip": "127.0.0.1",
+                        "euid": "0",
+                        "dstuser": "root",
+                        "tty": "ssh"
+                    },
+                    "rule": {
+                        "firedtimes": 3,
+                        "mail": false,
+                        "level": 10,
+                        "description": "SSH brute force-attack detected (5+ failed attempts)",
+                        "groups": [
+                            "local",
+                            "sshd",
+                            "authentication_failures"
+                        ],
+                        "mitre": {
+                            "technique": [
+                                "Brute Force"
+                            ],
+                            "id": [
+                                "T1110"
+                            ],
+                            "tactic": [
+                                "Credential Access"
+                            ]
+                        },
+                        "id": "100001",
+                        "frequency": 5
+                    },
+                    "full_log": "Apr 30 10:50:34 cachyos-x8664 sshd-session[112733]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=root",
+                    "id": "1777546235.27983",
+                    "timestamp": "2026-04-30T10:50:35.841+0000",
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "sshd-session",
+                        "timestamp": "Apr 30 10:50:34"
+                    },
+                    "previous_output": "Apr 30 10:50:34 cachyos-x8664 unix_chkpwd[112741]: password check failed for user (root)\nApr 30 10:50:34 cachyos-x8664 unix_chkpwd[112740]: password check failed for user (root)\nApr 30 10:50:34 cachyos-x8664 unix_chkpwd[112738]: password check failed for user (root)\nApr 30 10:50:34 cachyos-x8664 unix_chkpwd[112739]: password check failed for user (root)",
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "decoder": {
+                        "name": "pam"
+                    },
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:35.841Z",
+                    "location": "journald"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "xYcD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "sshd-session",
+                        "timestamp": "Apr 30 10:50:36"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "srcip": "127.0.0.1",
+                        "dstuser": "root",
+                        "srcport": "45080"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 5,
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "pci_dss": [
+                            "10.2.4",
+                            "10.2.5"
+                        ],
+                        "tsc": [
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "sshd: authentication failed.",
+                        "groups": [
+                            "syslog",
+                            "sshd",
+                            "authentication_failed"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_35.7.d",
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 12,
+                        "mitre": {
+                            "technique": [
+                                "Password Guessing",
+                                "SSH"
+                            ],
+                            "id": [
+                                "T1110.001",
+                                "T1021.004"
+                            ],
+                            "tactic": [
+                                "Credential Access",
+                                "Lateral Movement"
+                            ]
+                        },
+                        "id": "5760",
+                        "gpg13": [
+                            "7.1"
+                        ]
+                    },
+                    "decoder": {
+                        "parent": "sshd",
+                        "name": "sshd"
+                    },
+                    "full_log": "Apr 30 10:50:36 cachyos-x8664 sshd-session[112730]: Failed password for root from 127.0.0.1 port 45080 ssh2",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:37.819Z",
+                    "location": "journald",
+                    "id": "1777546237.29235",
+                    "timestamp": "2026-04-30T10:50:37.819+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "x4cD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "unix_chkpwd",
+                        "timestamp": "Apr 30 10:50:36"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "srcuser": "root"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 5,
+                        "pci_dss": [
+                            "10.2.4",
+                            "10.2.5"
+                        ],
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "tsc": [
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "unix_chkpwd: Password check failed.",
+                        "groups": [
+                            "pam",
+                            "syslog",
+                            "authentication_failed"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_35.7.d",
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 15,
+                        "mitre": {
+                            "technique": [
+                                "Password Guessing"
+                            ],
+                            "id": [
+                                "T1110.001"
+                            ],
+                            "tactic": [
+                                "Credential Access"
+                            ]
+                        },
+                        "id": "5557",
+                        "gpg13": [
+                            "4.3"
+                        ]
+                    },
+                    "decoder": {
+                        "name": "unix_chkpwd"
+                    },
+                    "full_log": "Apr 30 10:50:36 cachyos-x8664 unix_chkpwd[112742]: password check failed for user (root)",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:37.825Z",
+                    "location": "journald",
+                    "id": "1777546237.30201",
+                    "timestamp": "2026-04-30T10:50:37.825+0000"
+                }
+            },
+            {
+                "_index": "wazuh-alerts-4.x-2026.04.30",
+                "_id": "yYcD3p0BcakiGL8UM7l2",
+                "_score": 1.0,
+                "_source": {
+                    "predecoder": {
+                        "hostname": "cachyos-x8664",
+                        "program_name": "sshd-session",
+                        "timestamp": "Apr 30 10:50:38"
+                    },
+                    "agent": {
+                        "ip": "127.0.0.1",
+                        "name": "cachyos-x8664",
+                        "id": "001"
+                    },
+                    "manager": {
+                        "name": "wazuh.manager"
+                    },
+                    "data": {
+                        "srcip": "127.0.0.1",
+                        "dstuser": "root",
+                        "srcport": "45080"
+                    },
+                    "rule": {
+                        "mail": false,
+                        "level": 5,
+                        "hipaa": [
+                            "164.312.b"
+                        ],
+                        "pci_dss": [
+                            "10.2.4",
+                            "10.2.5"
+                        ],
+                        "tsc": [
+                            "CC6.1",
+                            "CC6.8",
+                            "CC7.2",
+                            "CC7.3"
+                        ],
+                        "description": "sshd: authentication failed.",
+                        "groups": [
+                            "syslog",
+                            "sshd",
+                            "authentication_failed"
+                        ],
+                        "nist_800_53": [
+                            "AU.14",
+                            "AC.7"
+                        ],
+                        "gdpr": [
+                            "IV_35.7.d",
+                            "IV_32.2"
+                        ],
+                        "firedtimes": 15,
+                        "mitre": {
+                            "technique": [
+                                "Password Guessing",
+                                "SSH"
+                            ],
+                            "id": [
+                                "T1110.001",
+                                "T1021.004"
+                            ],
+                            "tactic": [
+                                "Credential Access",
+                                "Lateral Movement"
+                            ]
+                        },
+                        "id": "5760",
+                        "gpg13": [
+                            "7.1"
+                        ]
+                    },
+                    "decoder": {
+                        "parent": "sshd",
+                        "name": "sshd"
+                    },
+                    "full_log": "Apr 30 10:50:38 cachyos-x8664 sshd-session[112730]: Failed password for root from 127.0.0.1 port 45080 ssh2",
+                    "input": {
+                        "type": "log"
+                    },
+                    "@timestamp": "2026-04-30T10:50:39.819Z",
+                    "location": "journald",
+                    "id": "1777546239.31109",
+                    "timestamp": "2026-04-30T10:50:39.819+0000"
                 }
             },
             {
