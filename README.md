@@ -151,196 +151,196 @@ Men det blir nästan aldrig realtid med just vårt skript. Det går tillbaka och
 Det ska finnas AI-lösningar som körs i realtid, men i vår labb har vi inte ett sådant.
 
 ## Filsystem
-|-- Dokumentation
-|   |-- 3_attacks.png
-|   |-- ai_defender.png
-|   |-- ai_detection.png
-|   |-- kommandon.docx
-|   |-- lab1-arbetsdokument.docx
-|   |-- test_pipeline_wazuh_result.png
-|   |-- tidslinje.docx
-|   |-- wazuh_dashboard.png
-|   `-- wazuh_dashboard_after_ai.png
-|-- README.md
-|-- ai-detection
-|   |-- __pycache__
-|   |   `-- anomaly_detector.cpython-314.pyc
-|   |-- active_alerts.json
-|   |-- ai_defender.sh
-|   |-- alert_manager.py
-|   |-- alerts.log
-|   |-- anomaly_detector.py
-|   |-- anomaly_report.txt
-|   |-- anomaly_results.csv
-|   |-- baseline_alerts.json
-|   |-- detection_comparison.json
-|   |-- fixed_nmap_test.json
-|   |-- incident_response.log
-|   |-- nmap_clean.json
-|   |-- nmap_for_script.json
-|   |-- nmap_raw.json
-|   |-- nmap_test.json
-|   |-- nmap_test_alerts.json
-|   |-- response_alerts.json
-|   |-- response_playbook.py
-|   |-- run_test.py
-|   |-- slow_attack.sh
-|   |-- test_alerts.json
-|   |-- test_pipeline.sh
-|   |-- testscript.py
-|   |-- timer.py
-|   `-- verify_logs.sh
-|-- detection_comparison.json
-|-- local_rules.xml
-|-- measure.py
-|-- nmap_test.json
-|-- ossec.conf
-|-- screens
-|   |-- agent_active.png
-|   |-- anomaly_detector.png
-|   |-- dashboard.png
-|   |-- file_integrity_monitor_config.png
-|   `-- wazuhflow.png
-`-- wazuh-docker
-    |-- CHANGELOG.md
-    |-- LICENSE
-    |-- README.md
-    |-- SECURITY.md
-    |-- VERSION.json
-    |-- build-docker-images
-    |   |-- README.md
-    |   |-- build-images.sh
-    |   |-- build-images.yml
-    |   |-- wazuh-agent
-    |   |   |-- Dockerfile
-    |   |   `-- config
-    |   |       |-- check_repository.sh
-    |   |       `-- etc
-    |   |           |-- cont-init.d
-    |   |           |   |-- 0-wazuh-init
-    |   |           |   `-- 1-agent
-    |   |           `-- services.d
-    |   |               `-- ossec-logs
-    |   |                   `-- run
-    |   |-- wazuh-dashboard
-    |   |   |-- Dockerfile
-    |   |   `-- config
-    |   |       |-- check_repository.sh
-    |   |       |-- config.sh
-    |   |       |-- config.yml
-    |   |       |-- entrypoint.sh
-    |   |       |-- wazuh.yml
-    |   |       `-- wazuh_app_config.sh
-    |   |-- wazuh-indexer
-    |   |   |-- Dockerfile
-    |   |   `-- config
-    |   |       |-- action_groups.yml
-    |   |       |-- check_repository.sh
-    |   |       |-- config.sh
-    |   |       |-- config.yml
-    |   |       |-- entrypoint.sh
-    |   |       |-- internal_users.yml
-    |   |       |-- opensearch.yml
-    |   |       |-- roles.yml
-    |   |       |-- roles_mapping.yml
-    |   |       `-- securityadmin.sh
-    |   `-- wazuh-manager
-    |       |-- Dockerfile
-    |       `-- config
-    |           |-- check_repository.sh
-    |           |-- create_user.py
-    |           |-- etc
-    |           |   |-- cont-init.d
-    |           |   |   |-- 0-wazuh-init
-    |           |   |   |-- 1-config-filebeat
-    |           |   |   `-- 2-manager
-    |           |   `-- services.d
-    |           |       |-- filebeat
-    |           |       |   |-- finish
-    |           |       |   `-- run
-    |           |       `-- ossec-logs
-    |           |           `-- run
-    |           |-- filebeat.yml
-    |           |-- filebeat_module.sh
-    |           |-- permanent_data.env
-    |           `-- permanent_data.sh
-    |-- docs
-    |   |-- README.md
-    |   |-- SUMMARY.md
-    |   |-- book.toml
-    |   |-- build.sh
-    |   |-- dev
-    |   |   |-- build-image.md
-    |   |   |-- introduction.md
-    |   |   |-- run-tests.md
-    |   |   `-- setup.md
-    |   |-- ref
-    |   |   |-- Introduction
-    |   |   |   |-- description.md
-    |   |   |   `-- introduction.md
-    |   |   |-- configuration
-    |   |   |   |-- configuration-files.md
-    |   |   |   |-- configuration.md
-    |   |   |   `-- environment-variables.md
-    |   |   |-- getting-started
-    |   |   |   |-- deployment
-    |   |   |   |   |-- deployment.md
-    |   |   |   |   |-- multi-node.md
-    |   |   |   |   |-- single-node.md
-    |   |   |   |   `-- wazuh-agent.md
-    |   |   |   |-- getting-started.md
-    |   |   |   `-- requirements.md
-    |   |   |-- glossary.md
-    |   |   `-- upgrade.md
-    |   `-- server.sh
-    |-- indexer-certs-creator
-    |   |-- Dockerfile
-    |   |-- README.md
-    |   |-- build-image.sh
-    |   |-- build-image.yml
-    |   `-- config
-    |       `-- entrypoint.sh
-    |-- multi-node
-    |   |-- Migration-to-Wazuh-4.4.md
-    |   |-- README.md
-    |   |-- config
-    |   |   |-- certs.yml
-    |   |   |-- nginx
-    |   |   |   `-- nginx.conf
-    |   |   |-- wazuh_cluster
-    |   |   |   |-- wazuh_manager.conf
-    |   |   |   `-- wazuh_worker.conf
-    |   |   |-- wazuh_dashboard
-    |   |   |   |-- opensearch_dashboards.yml
-    |   |   |   `-- wazuh.yml
-    |   |   `-- wazuh_indexer
-    |   |       |-- internal_users.yml
-    |   |       |-- wazuh1.indexer.yml
-    |   |       |-- wazuh2.indexer.yml
-    |   |       `-- wazuh3.indexer.yml
-    |   |-- docker-compose.yml
-    |   |-- generate-indexer-certs.yml
-    |   `-- volume-migrator.sh
-    |-- single-node
-    |   |-- README.md
-    |   |-- config
-    |   |   |-- certs.yml
-    |   |   |-- wazuh_cluster
-    |   |   |   `-- wazuh_manager.conf
-    |   |   |-- wazuh_dashboard
-    |   |   |   |-- opensearch_dashboards.yml
-    |   |   |   `-- wazuh.yml
-    |   |   |-- wazuh_indexer
-    |   |   |   |-- internal_users.yml
-    |   |   |   `-- wazuh.indexer.yml
-    |   |   `-- wazuh_indexer_ssl_certs  [error opening dir]
-    |   |-- docker-compose.yml
-    |   `-- generate-indexer-certs.yml
-    |-- tools
-    |   `-- repository_bumper.sh
-    `-- wazuh-agent
-        |-- config
-        |   `-- wazuh-agent-conf
-        `-- docker-compose.yml
+|-- Dokumentation  
+|   |-- 3_attacks.png  
+|   |-- ai_defender.png  
+|   |-- ai_detection.png  
+|   |-- kommandon.docx  
+|   |-- lab1-arbetsdokument.docx  
+|   |-- test_pipeline_wazuh_result.png  
+|   |-- tidslinje.docx  
+|   |-- wazuh_dashboard.png  
+|   `-- wazuh_dashboard_after_ai.png  
+|-- README.md  
+|-- ai-detection  
+|   |-- __pycache__  
+|   |   `-- anomaly_detector.cpython-314.pyc  
+|   |-- active_alerts.json  
+|   |-- ai_defender.sh  
+|   |-- alert_manager.py  
+|   |-- alerts.log  
+|   |-- anomaly_detector.py  
+|   |-- anomaly_report.txt  
+|   |-- anomaly_results.csv  
+|   |-- baseline_alerts.json  
+|   |-- detection_comparison.json  
+|   |-- fixed_nmap_test.json  
+|   |-- incident_response.log  
+|   |-- nmap_clean.json  
+|   |-- nmap_for_script.json  
+|   |-- nmap_raw.json  
+|   |-- nmap_test.json  
+|   |-- nmap_test_alerts.json  
+|   |-- response_alerts.json  
+|   |-- response_playbook.py  
+|   |-- run_test.py  
+|   |-- slow_attack.sh  
+|   |-- test_alerts.json  
+|   |-- test_pipeline.sh  
+|   |-- testscript.py  
+|   |-- timer.py  
+|   `-- verify_logs.sh  
+|-- detection_comparison.json  
+|-- local_rules.xml  
+|-- measure.py  
+|-- nmap_test.json  
+|-- ossec.conf  
+|-- screens  
+|   |-- agent_active.png  
+|   |-- anomaly_detector.png  
+|   |-- dashboard.png  
+|   |-- file_integrity_monitor_config.png  
+|   `-- wazuhflow.png  
+`-- wazuh-docker  
+    |-- CHANGELOG.md  
+    |-- LICENSE  
+    |-- README.md  
+    |-- SECURITY.md  
+    |-- VERSION.json  
+    |-- build-docker-images  
+    |   |-- README.md  
+    |   |-- build-images.sh  
+    |   |-- build-images.yml  
+    |   |-- wazuh-agent  
+    |   |   |-- Dockerfile  
+    |   |   `-- config  
+    |   |       |-- check_repository.sh  
+    |   |       `-- etc  
+    |   |           |-- cont-init.d  
+    |   |           |   |-- 0-wazuh-init  
+    |   |           |   `-- 1-agent  
+    |   |           `-- services.d  
+    |   |               `-- ossec-logs  
+    |   |                   `-- run  
+    |   |-- wazuh-dashboard  
+    |   |   |-- Dockerfile  
+    |   |   `-- config  
+    |   |       |-- check_repository.sh  
+    |   |       |-- config.sh  
+    |   |       |-- config.yml  
+    |   |       |-- entrypoint.sh  
+    |   |       |-- wazuh.yml  
+    |   |       `-- wazuh_app_config.sh  
+    |   |-- wazuh-indexer  
+    |   |   |-- Dockerfile  
+    |   |   `-- config  
+    |   |       |-- action_groups.yml  
+    |   |       |-- check_repository.sh  
+    |   |       |-- config.sh  
+    |   |       |-- config.yml  
+    |   |       |-- entrypoint.sh  
+    |   |       |-- internal_users.yml  
+    |   |       |-- opensearch.yml  
+    |   |       |-- roles.yml  
+    |   |       |-- roles_mapping.yml  
+    |   |       `-- securityadmin.sh  
+    |   `-- wazuh-manager  
+    |       |-- Dockerfile  
+    |       `-- config  
+    |           |-- check_repository.sh  
+    |           |-- create_user.py  
+    |           |-- etc  
+    |           |   |-- cont-init.d  
+    |           |   |   |-- 0-wazuh-init  
+    |           |   |   |-- 1-config-filebeat  
+    |           |   |   `-- 2-manager  
+    |           |   `-- services.d  
+    |           |       |-- filebeat  
+    |           |       |   |-- finish  
+    |           |       |   `-- run  
+    |           |       `-- ossec-logs  
+    |           |           `-- run  
+    |           |-- filebeat.yml  
+    |           |-- filebeat_module.sh  
+    |           |-- permanent_data.env  
+    |           `-- permanent_data.sh  
+    |-- docs  
+    |   |-- README.md  
+    |   |-- SUMMARY.md  
+    |   |-- book.toml  
+    |   |-- build.sh  
+    |   |-- dev  
+    |   |   |-- build-image.md  
+    |   |   |-- introduction.md  
+    |   |   |-- run-tests.md  
+    |   |   `-- setup.md  
+    |   |-- ref  
+    |   |   |-- Introduction  
+    |   |   |   |-- description.md  
+    |   |   |   `-- introduction.md  
+    |   |   |-- configuration  
+    |   |   |   |-- configuration-files.md  
+    |   |   |   |-- configuration.md  
+    |   |   |   `-- environment-variables.md  
+    |   |   |-- getting-started  
+    |   |   |   |-- deployment  
+    |   |   |   |   |-- deployment.md  
+    |   |   |   |   |-- multi-node.md  
+    |   |   |   |   |-- single-node.md  
+    |   |   |   |   `-- wazuh-agent.md  
+    |   |   |   |-- getting-started.md  
+    |   |   |   `-- requirements.md  
+    |   |   |-- glossary.md  
+    |   |   `-- upgrade.md  
+    |   `-- server.sh  
+    |-- indexer-certs-creator  
+    |   |-- Dockerfile  
+    |   |-- README.md  
+    |   |-- build-image.sh  
+    |   |-- build-image.yml  
+    |   `-- config  
+    |       `-- entrypoint.sh  
+    |-- multi-node  
+    |   |-- Migration-to-Wazuh-4.4.md  
+    |   |-- README.md  
+    |   |-- config  
+    |   |   |-- certs.yml  
+    |   |   |-- nginx  
+    |   |   |   `-- nginx.conf  
+    |   |   |-- wazuh_cluster  
+    |   |   |   |-- wazuh_manager.conf  
+    |   |   |   `-- wazuh_worker.conf  
+    |   |   |-- wazuh_dashboard  
+    |   |   |   |-- opensearch_dashboards.yml  
+    |   |   |   `-- wazuh.yml  
+    |   |   `-- wazuh_indexer  
+    |   |       |-- internal_users.yml  
+    |   |       |-- wazuh1.indexer.yml   
+    |   |       |-- wazuh2.indexer.yml  
+    |   |       `-- wazuh3.indexer.yml  
+    |   |-- docker-compose.yml  
+    |   |-- generate-indexer-certs.yml  
+    |   `-- volume-migrator.sh  
+    |-- single-node  
+    |   |-- README.md  
+    |   |-- config  
+    |   |   |-- certs.yml  
+    |   |   |-- wazuh_cluster  
+    |   |   |   `-- wazuh_manager.conf  
+    |   |   |-- wazuh_dashboard  
+    |   |   |   |-- opensearch_dashboards.yml  
+    |   |   |   `-- wazuh.yml  
+    |   |   |-- wazuh_indexer  
+    |   |   |   |-- internal_users.yml  
+    |   |   |   `-- wazuh.indexer.yml  
+    |   |   `-- wazuh_indexer_ssl_certs  [error opening dir]  
+    |   |-- docker-compose.yml  
+    |   `-- generate-indexer-certs.yml  
+    |-- tools  
+    |   `-- repository_bumper.sh  
+    `-- wazuh-agent  
+        |-- config  
+        |   `-- wazuh-agent-conf  
+        `-- docker-compose.yml  
 
 48 directories, 144 files
