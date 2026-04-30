@@ -433,5 +433,30 @@
     "severity": "critical",
     "message": "Kritisk incident: {'event_count': 35, 'avg_severity': 5.09, 'unique_ips': 2, 'anomaly_score': -0.1649, 'zscore': 5.33}",
     "timestamp": "2026-04-28T18:46:32.184786"
+  },
+  {
+    "severity": "critical",
+    "message": "Kritisk incident: {'event_count': 20, 'avg_severity': 7.55, 'unique_ips': 1, 'anomaly_score': -0.2945, 'zscore': 7.5}",
+    "timestamp": "2026-04-30T12:22:43.600652"
+  },
+  {
+    "severity": "critical",
+    "message": "Kritisk incident: {'event_count': 1, 'avg_severity': 5.0, 'unique_ips': 1, 'anomaly_score': -0.3501, 'zscore': 0.23}",
+    "timestamp": "2026-04-30T12:22:43.603030"
+  },
+  {
+    "severity": "critical",
+    "message": "Kritisk incident: {'event_count': 20, 'avg_severity': 7.55, 'unique_ips': 1, 'anomaly_score': -0.2945, 'zscore': 7.5}",
+    "timestamp": "2026-04-30T12:22:43.605156"
+  },
+  {
+    "severity": "critical",
+    "message": "Kritisk incident: {'event_count': 14, 'avg_severity': 5.36, 'unique_ips': 2, 'anomaly_score': -0.3192, 'zscore': 5.21}",
+    "timestamp": "2026-04-30T12:22:43.605892"
+  },
+  {
+    "severity": "critical",
+    "message": "Kritisk incident: {'event_count': 17, 'avg_severity': 4.94, 'unique_ips': 2, 'anomaly_score': -0.3232, 'zscore': 6.35}",
+    "timestamp": "2026-04-30T12:22:43.606562"
   }
 ]

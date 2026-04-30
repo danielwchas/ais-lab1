@@ -172,3 +172,13 @@
 2026-04-28 18:46:32,184 [WARNING] LARM [MEDIUM]: Medium incident: {'event_count': 15, 'avg_severity': 5.87, 'unique_ips': 1, 'anomaly_score': -0.1008, 'zscore': 2.01}
 2026-04-28 18:46:32,184 [INFO] Behandlar larm: critical — {"event_count": 35, "avg_severity": 5.09, "unique_ips": 2, "anomaly_score": -0.1649, "zscore": 5.33}
 2026-04-28 18:46:32,184 [WARNING] LARM [CRITICAL]: Kritisk incident: {'event_count': 35, 'avg_severity': 5.09, 'unique_ips': 2, 'anomaly_score': -0.1649, 'zscore': 5.33}
+2026-04-30 12:22:43,599 [INFO] Behandlar larm: critical — {"event_count": 20, "avg_severity": 7.55, "unique_ips": 1, "anomaly_score": -0.2945, "zscore": 7.5}
+2026-04-30 12:22:43,600 [WARNING] LARM [CRITICAL]: Kritisk incident: {'event_count': 20, 'avg_severity': 7.55, 'unique_ips': 1, 'anomaly_score': -0.2945, 'zscore': 7.5}
+2026-04-30 12:22:43,602 [INFO] Behandlar larm: critical — {"event_count": 1, "avg_severity": 5.0, "unique_ips": 1, "anomaly_score": -0.3501, "zscore": 0.23}
+2026-04-30 12:22:43,603 [WARNING] LARM [CRITICAL]: Kritisk incident: {'event_count': 1, 'avg_severity': 5.0, 'unique_ips': 1, 'anomaly_score': -0.3501, 'zscore': 0.23}
+2026-04-30 12:22:43,605 [INFO] Behandlar larm: critical — {"event_count": 20, "avg_severity": 7.55, "unique_ips": 1, "anomaly_score": -0.2945, "zscore": 7.5}
+2026-04-30 12:22:43,605 [WARNING] LARM [CRITICAL]: Kritisk incident: {'event_count': 20, 'avg_severity': 7.55, 'unique_ips': 1, 'anomaly_score': -0.2945, 'zscore': 7.5}
+2026-04-30 12:22:43,605 [INFO] Behandlar larm: critical — {"event_count": 14, "avg_severity": 5.36, "unique_ips": 2, "anomaly_score": -0.3192, "zscore": 5.21}
+2026-04-30 12:22:43,605 [WARNING] LARM [CRITICAL]: Kritisk incident: {'event_count': 14, 'avg_severity': 5.36, 'unique_ips': 2, 'anomaly_score': -0.3192, 'zscore': 5.21}
+2026-04-30 12:22:43,606 [INFO] Behandlar larm: critical — {"event_count": 17, "avg_severity": 4.94, "unique_ips": 2, "anomaly_score": -0.3232, "zscore": 6.35}
+2026-04-30 12:22:43,606 [WARNING] LARM [CRITICAL]: Kritisk incident: {'event_count': 17, 'avg_severity': 4.94, 'unique_ips': 2, 'anomaly_score': -0.3232, 'zscore': 6.35}

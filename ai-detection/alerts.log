@@ -655,3 +655,9 @@
 2026-04-28 18:46:26,495 [INFO] Skrev 29 larm till active_alerts.json
 2026-04-28 18:53:32,050 [INFO] Skrev 0 larm till active_alerts.json
 2026-04-29 09:26:18,223 [INFO] Skrev 0 larm till active_alerts.json
+2026-04-30 12:22:43,369 [WARNING] [CRITICAL] Anomali vid 2026-04-29 19:00:00+00:00: 20 händelser, z=7.50
+2026-04-30 12:22:43,373 [WARNING] [CRITICAL] Anomali vid 2026-04-29 22:00:00+00:00: 1 händelser, z=0.23
+2026-04-30 12:22:43,378 [WARNING] [CRITICAL] Anomali vid 2026-04-30 07:05:00+00:00: 20 händelser, z=7.50
+2026-04-30 12:22:43,381 [WARNING] [CRITICAL] Anomali vid 2026-04-30 10:15:00+00:00: 14 händelser, z=5.21
+2026-04-30 12:22:43,381 [WARNING] [CRITICAL] Anomali vid 2026-04-30 10:20:00+00:00: 17 händelser, z=6.35
+2026-04-30 12:22:43,381 [INFO] Skrev 5 larm till active_alerts.json
